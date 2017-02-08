@@ -5,6 +5,9 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+
+gem 'html2haml', '~> 2.1'
+gem 'haml', '~> 4.0', '>= 4.0.7'
 gem 'fog', '~> 1.38'
 gem 'carrierwave', '~> 1.0'
 gem 'mini_magick', '~> 4.6'
