@@ -15,5 +15,21 @@
 @import "bootstrap";
 
 body {
-  padding: 60px;
+  padding: 70px;
+}
+
+.navbar-header{
+   left: 45%;
+   position: relative;
+   transform: translateX(-50%);
+}
+
+.index-panel {
+  max-width: 70%;
+}
+.list-font{
+  font-size: 15px;
+  position: relative;
+  color: gray;
+  text-align: left;
 }
