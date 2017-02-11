@@ -16,16 +16,17 @@
 
 body {
   padding: 70px;
+  background-color: #4F5052;
 }
 
 .navbar-header{
-   left: 45%;
+   left: 50%;
    position: relative;
    transform: translateX(-50%);
 }
 
 .index-panel {
-  max-width: 70%;
+  max-width: 90%;
 }
 
 .list-font{
@@ -55,4 +56,8 @@ body {
 
 .panel-body p{
   color:#555;
+}
+
+.index-title {
+  color: white;
 }
