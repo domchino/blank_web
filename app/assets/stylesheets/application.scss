@@ -112,3 +112,41 @@ body {
 .font-red {
   color: #cc181e;
 }
+.panel-default > .custom-heading {
+  background: #607d8b;
+  color: #fff;
+}
+.panel {
+  border: none;
+}
+.panel-default > .custom-heading2 {
+  color: #fff;
+  background: #ff5722;
+}
+.panel-default > .custom-body {
+  background: #fff;
+  color: #607d8b;
+}
+
+.btn {
+  padding: 7px 12px;
+  border: 0 none;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+  outline: 0 none;
+}
+
+.btn-primary {
+  background: #ff5722;
+  color: #ffffff;
+}
+.btn-alt {
+  background: #607d8b;
+  color: #fff;
+}
+.font-gray {
+  color: #555;
+}

@@ -1,8 +1,8 @@
 %center
   .container.log-in
-    .panel.panel-warning
-      .panel-heading
-        %h2 Log in
+    .panel.panel-default
+      .panel-heading.custom-heading
+        %h1 Login
       .panel-body
         = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
           .form-group
@@ -18,5 +18,5 @@
               = f.check_box :remember_me
               = f.label :remember_me
           .form-group
-            = f.submit 'Login', class: "btn btn-warning btn-lg standard-button2"
+            = f.submit 'Login', class: "btn btn-primary btn-lg standard-button2"
       = render '/devise/shared/links'
