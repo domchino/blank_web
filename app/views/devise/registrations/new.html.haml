@@ -1,0 +1,38 @@
+%center
+  .container.log-in
+    .panel.panel-danger
+      .panel-heading
+        %h2 Sign up
+      .panel-body
+        = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+          = devise_error_messages!
+          .form-group
+            = f.label :artist_name
+            %br/
+            = f.text_field :artist_name
+          .form-group
+            = f.label :username
+            %br/
+            = f.text_field :username, autofocus: true
+          .form-group
+            = f.label :creative_field
+            %br/
+            = f.text_field :creative_field
+          .form-group
+            = f.label :email
+            %br/
+            = f.email_field :email, autofocus: true
+          .form-group
+            = f.label :password
+            - if @minimum_password_length
+              %em
+                (#{@minimum_password_length} characters minimum)
+            %br/
+            = f.password_field :password, autocomplete: "off"
+          .form-group
+            = f.label :password_confirmation
+            %br/
+            = f.password_field :password_confirmation, autocomplete: "off"
+          .form-group
+            = f.submit "Sign up", class: "btn btn-danger btn-lg standard-button2"
+        = render "devise/shared/links"
