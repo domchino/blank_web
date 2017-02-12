@@ -15,8 +15,8 @@
 @import "bootstrap";
 
 body {
-  padding: 70px;
-  background-color: #4F5052;
+  padding: 80px;
+  background-color: #BABABA;
 }
 
 .navbar-header{
@@ -59,7 +59,7 @@ body {
 }
 
 .index-title {
-  color: white;
+  color: #ffffff;
 }
 
 .edit-profile {
@@ -100,3 +100,15 @@ body {
     color: #468847;
     text-align: left;
  }
+.font-dark {
+  color: #000000;
+}
+.font-dope {
+  color: #607d8b;
+}
+.font-orange {
+  color: #ff5722;
+}
+.font-red {
+  color: #cc181e;
+}
