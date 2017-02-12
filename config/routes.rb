@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-
+  
+  resources :posts
+  get '/community/posts/new' => 'posts#new'
+  get '/community/posts/edit' => 'posts#edit'
+  get '/community/posts/:id' => 'posts#show'
 
   devise_for :users
 
