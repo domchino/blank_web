@@ -16,7 +16,7 @@
 
 body {
   padding: 80px;
-  background-color: #BABABA;
+  background-color: #6a6b6d;
 }
 
 .navbar-header{
@@ -24,7 +24,10 @@ body {
    position: relative;
    transform: translateX(-50%);
 }
-
+.navbar-brand {
+  position: relative;
+  margin-top: -18px;
+}
 .index-panel {
   max-width: 90%;
 }
@@ -149,4 +152,10 @@ body {
 }
 .font-gray {
   color: #555;
+}
+.font-blue {
+  color: #4471a3;
+}
+.font-sea {
+  color: #35c9c2;
 }

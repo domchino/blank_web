@@ -1,7 +1,8 @@
 %nav.navbar.navbar-inverse.navbar-fixed-top
   .container
     .navbar-header
-      %a.navbar-brand{:href => "/home"} [ BLANK ]
+      %a.navbar-brand{:href => "/"}
+        %img{:alt => "[ BLANK ]", :src => "/logo.png", width: "100px", height: "60px"}/
     #bs-example-navbar-collapse-1.collapse.navbar-collapse
       %ul.nav.navbar-nav.navbar-left
         %li
@@ -13,7 +14,7 @@
       %ul.nav.navbar-nav.navbar-right
         %li.fuck-you
           .btn-group
-            %button.btn.btn-danger.navbar-btn.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"}
+            %button.btn.btn-primary.navbar-btn.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"}
               = "@" + current_user.username
               %span.caret
             %ul.dropdown-menu
