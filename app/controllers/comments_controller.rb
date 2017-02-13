@@ -19,7 +19,7 @@ class CommentsController < ApplicationController
 
     @comment.destroy
     flash[:success] = "Comment deleted :("
-    redirect_to community_path
+    redirect_to :back
   end
 
   private

@@ -74,7 +74,7 @@ body {
 }
 
 .fuck-you {
-  right: 50%;
+  right: 25%;
   position: relative;
   transform: translateX(-50%);
 }
@@ -217,4 +217,7 @@ textarea {
 }
 .comment-form {
   margin-left: 85px;
+}
+.new-post-btn {
+  float: right;
 }

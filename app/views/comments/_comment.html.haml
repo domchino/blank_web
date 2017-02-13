@@ -1,0 +1,14 @@
+#comment
+  %br
+  .container
+    .panelcustom.panel-default
+      .panel-body.custom-body
+        .comment
+          .user-name
+            = "@" + comment.user.username + " |  "
+          .comment-content
+            = " | " + comment.content
+            - if comment.user == current_user
+              .comment-delete
+                %button#link-style3.btn.btn-danger
+                  = link_to 'Delete Comment', [comment.post, comment], method: :delete, data: { confirm: "Are you sure?" }
