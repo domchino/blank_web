@@ -10,5 +10,5 @@
             = " | " + comment.content
             - if comment.user == current_user
               .comment-delete
-                %button#link-style3.btn.btn-danger
-                  = link_to 'Delete Comment', [comment.post, comment], method: :delete, data: { confirm: "Are you sure?" }
+                = link_to post_comment_path(post, comment), method: :delete, data: { confirm: "Are you sure?" } do
+                  %span(class="glyphicon glyphicon-remove delete-comment")
