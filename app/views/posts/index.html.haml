@@ -1,7 +1,8 @@
 - @posts.each do |post|
-  %h2.font-orange= link_to post.title, post
-  %p.font-white
+  %h2#link-style= link_to post.title, post
+  %p.font-sea
     = "~ Posted " + time_ago_in_words(post.created_at) + " ago"
     by
     = "@" + post.user.username + " ~"
-= link_to 'New Post', new_post_path
+  %hr
+#link-style= link_to 'New Post', new_post_path

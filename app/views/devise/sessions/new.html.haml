@@ -3,7 +3,7 @@
     .panel.panel-default
       .panel-heading.custom-heading
         %h1 Login
-      .panel-body
+      .panel-body.custom-body
         = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
           .form-group
             = f.label :email

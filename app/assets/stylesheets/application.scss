@@ -58,7 +58,11 @@ body {
 }
 
 .panel-body p{
-  color:#555;
+  color: #35c9c2;
+}
+
+.panel-body {
+  background: #373939;
 }
 
 .index-title {
@@ -160,5 +164,20 @@ body {
   color: #35c9c2;
 }
 .font-white {
+  color: #fff;
+}
+
+#link-style a {
+  text-decoration: none;
+  color: #ff5722;
+}
+
+#link-style2 a {
+  text-decoration: none;
+  color: #cc181e;
+}
+
+#link-style3 a {
+  text-decoration: none;
   color: #fff;
 }
