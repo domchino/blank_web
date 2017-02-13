@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
-  
+
   resources :posts
   get '/community/posts/new' => 'posts#new'
   get '/community/posts/edit' => 'posts#edit'
   get '/community/posts/:id' => 'posts#show'
+  get '/community' => 'posts#index'
 
   devise_for :users
 
@@ -12,8 +13,6 @@ Rails.application.routes.draw do
   get '/home' => 'pages#home'
 
   get '/about' => 'pages#about'
-
-  get '/community' => 'pages#community'
 
   get '/profile' => 'pages#profile'
 
