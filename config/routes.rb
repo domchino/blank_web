@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
-  resources :posts
+  resources :posts do
+    resources :comments
+  end
   get '/community/posts/new' => 'posts#new'
   get '/community/posts/edit' => 'posts#edit'
   get '/community/posts/:id' => 'posts#show'

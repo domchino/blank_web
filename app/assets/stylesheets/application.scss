@@ -126,6 +126,11 @@ body {
 .panel {
   border: none;
 }
+.panelcustom {
+  border: none;
+  width: 70%;
+  margin-left: 70px;
+}
 .panel-default > .custom-heading2 {
   color: #fff;
   background: #ff5722;
@@ -134,7 +139,10 @@ body {
   background: #fff;
   color: #607d8b;
 }
-
+.panel-info > .custom-body {
+  background: #fff;
+  color: #607d8b;
+}
 .btn {
   padding: 7px 12px;
   border: 0 none;
@@ -180,4 +188,33 @@ body {
 #link-style3 a {
   text-decoration: none;
   color: #fff;
+}
+
+textarea {
+  width: 500px;
+  height: 100px;
+}
+
+.comment-delete {
+  float: right;
+
+}
+
+.comment-content {
+  margin-left: 130px;
+
+}
+
+#post-options {
+  float: right;
+  margin-top: -25px;
+}
+
+.user-name {
+  color: #35c9c2;
+  margin-left: 40px;
+  float: left;
+}
+.comment-form {
+  margin-left: 85px;
 }
