@@ -6,6 +6,8 @@ git_source(:github) do |repo_name|
 end
 
 
+gem 'acts_as_votable'
+gem 'font-awesome-sass'
 gem 'html2haml', '~> 2.1'
 gem 'haml', '~> 4.0', '>= 4.0.7'
 gem 'fog', '~> 1.38'

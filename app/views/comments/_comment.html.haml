@@ -11,4 +11,4 @@
             - if comment.user == current_user
               .comment-delete
                 = link_to post_comment_path(post, comment), method: :delete, data: { confirm: "Are you sure?" } do
-                  %span(class="glyphicon glyphicon-remove delete-comment")
+                  %span.glyphicon.glyphicon-remove.delete-comment

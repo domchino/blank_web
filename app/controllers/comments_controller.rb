@@ -22,6 +22,18 @@ class CommentsController < ApplicationController
     redirect_to :back
   end
 
+  def upvote
+    @comment = @post.comments.find(params[:id])
+    @comment.upvote_from current_user
+    redirect_to :back
+  end
+
+  def downvote
+    @comment = @post.comments.find(params[:id])
+    @comment.upvote_from current_user
+    redirect_to :back
+  end
+
   private
 
   def comment_params

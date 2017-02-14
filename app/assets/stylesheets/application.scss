@@ -13,6 +13,8 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 body {
   padding: 80px;
@@ -220,4 +222,12 @@ textarea {
 }
 .new-post-btn {
   float: right;
+}
+#link-style2 i {
+  text-decoration: none;
+  color: #cc181e;
+}
+#link-style4 i {
+  text-decoration: none;
+  color: #35c9c2;
 }
